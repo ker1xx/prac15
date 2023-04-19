@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="prac15.ButtonElement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:prac15"
+             mc:Ignorable="d" 
+             d:MinHeight="60" d:MaxHeight="120" d:MinWidth="60" d:MaxWidth="120">
+    <Grid>
+        <Button x:Name="btn">
+        </Button>
+            <Label x:Name="Day" VerticalAlignment="Top" HorizontalAlignment="Center" MinHeight="20" MaxHeight="40"/>
+        <Image x:Name="Img" VerticalAlignment="Bottom" MinHeight="40" MaxHeight="80" HorizontalAlignment="Center"/>
+    </Grid>
+</UserControl>
