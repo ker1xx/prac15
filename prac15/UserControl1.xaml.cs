@@ -24,5 +24,6 @@ namespace prac15
         {
             InitializeComponent();
         }
+
     }
 }

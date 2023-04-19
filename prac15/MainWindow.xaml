@@ -17,8 +17,16 @@
                 <ColumnDefinition Width="4*"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="PreviousMonth" Click="PreviousMonth_Click" Grid.Column="0"/>
-            <Button x:Name="NextMonth" Grid.Column="2" Click="NextMonth_Click"/>
+            <Button x:Name="PreviousMonth" Click="PreviousMonth_Click" Grid.Column="0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/png-clipart-computer-icons-left-arrow-angle-hand.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="NextMonth" Grid.Column="2" Click="NextMonth_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/png-clipart-arrow-computer-icons-right-arrow-cdr-angle.png"/>
+                </Button.Background>
+            </Button>
             <DatePicker x:Name="Dater"  Grid.Column="1" FirstDayOfWeek="Tuesday" SelectedDateChanged="Dater_SelectedDateChanged"/>
         </Grid>
         <WrapPanel x:Name="ButtonsPlace" Grid.Row="1" Orientation="Horizontal">
@@ -32,6 +40,6 @@
                 </Style>
             </WrapPanel.Resources>
         </WrapPanel>
-        <Frame x:Name="PageOfday" Grid.RowSpan="2"/>
+        <Frame x:Name="PageOfday" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

@@ -63,7 +63,6 @@
     </Compile>
     <Compile Include="CalendarModel.cs" />
     <Compile Include="ElementModel.cs" />
-    <Compile Include="ImgNums.cs" />
     <Compile Include="PageOfday.xaml.cs">
       <DependentUpon>PageOfday.xaml</DependentUpon>
     </Compile>
@@ -114,6 +113,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include=".editorconfig" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -122,6 +122,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Csharp_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\png-clipart-arrow-computer-icons-right-arrow-cdr-angle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\png-clipart-computer-icons-left-arrow-angle-hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\ISO_C++_Logo.svg.png" />
+    <Resource Include="Img\Java_programming_language_logo.svg.png" />
+    <Resource Include="Img\Python-logo-notext.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="png-clipart-computer-icons-left-arrow-angle-hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="png-clipart-arrow-computer-icons-right-arrow-cdr-angle.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

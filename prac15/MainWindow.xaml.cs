@@ -26,11 +26,11 @@ namespace prac15
             InitializeComponent();
             Dater.SelectedDate = DateTime.Today;
             Dater.Text = Dater.SelectedDate.Value.Month.ToString();
-
         }
         private void ButtonOnClick(object sender, EventArgs eventArgs)
         {
-            this.PageOfday.Content = new PageOfday(Dater.SelectedDate);
+            if (y.Elements.Any(x => x.Date == Dater.SelectedDate))
+                this.PageOfday.Content = new PageOfday(Dater.SelectedDate, sender);
         }
 
         private void PreviousMonth_Click(object sender, RoutedEventArgs e)

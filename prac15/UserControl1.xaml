@@ -11,8 +11,8 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <CheckBox x:Name="Checker" Grid.ColumnSpan="2" VerticalAlignment="Center" MinWidth="40" MinHeight="40"/>
-         <Image x:Name="img" Grid.Column="0" Margin="40,0,0,0"/>
-        <TextBlock x:Name="Name" Grid.Column="1" VerticalAlignment="Center" FontSize="30" Padding="10"></TextBlock>
+        <CheckBox x:Name="Checker" Grid.ColumnSpan="2" VerticalAlignment="Center" MinWidth="40" MinHeight="40" Height="38" />
+         <Image x:Name="img" Grid.Column="0" Margin="20,0,0,0" MinHeight="100" MaxHeight="200" MinWidth="100" MaxWidth="320"/>
+        <TextBlock x:Name="NameOfElement" Grid.Column="1" VerticalAlignment="Center" FontSize="30" Padding="10"></TextBlock>
     </Grid>
 </UserControl>

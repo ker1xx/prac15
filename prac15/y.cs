@@ -18,7 +18,8 @@ namespace prac15
                 json = File.ReadAllText(desktop + "\\" + FileName);
             else
             {
-                File.Create(desktop + "\\" + FileName);
+                FileStream stream = File.Create(desktop + "\\" + FileName);
+                stream.Close();
                 json = File.ReadAllText(desktop + "\\" + FileName);
             }
             T CurrentList = JsonConvert.DeserializeObject<T>(json);
@@ -33,8 +34,10 @@ namespace prac15
                 File.WriteAllText(desktop + "\\" + FileName, json);
             else
             {
-                File.Create(desktop + "\\" + FileName);
-                File.WriteAllText(desktop + "\\" + FileName, json);
+                FileStream stream = File.Create(desktop + "\\" + FileName);
+                stream.Close();
+                File.AppendAllText(desktop + "\\" + FileName, json);
+                
             }
         }
     }

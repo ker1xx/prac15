@@ -8,8 +8,8 @@
              d:MinHeight="60" d:MaxHeight="120" d:MinWidth="60" d:MaxWidth="120">
     <Grid>
         <Button x:Name="btn">
-        </Button>
             <Label x:Name="Day" VerticalAlignment="Top" HorizontalAlignment="Center" MinHeight="20" MaxHeight="40"/>
+        </Button>
         <Image x:Name="Img" VerticalAlignment="Bottom" MinHeight="40" MaxHeight="80" HorizontalAlignment="Center"/>
     </Grid>
 </UserControl>
